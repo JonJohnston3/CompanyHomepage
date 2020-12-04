@@ -3,9 +3,52 @@
 <html>
   <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
   </head>
 
   <body>
-    
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#show">The Show</a></li>
+          <li><a href="#hosts">The Hosts</a></li>
+          <li><a href="#tracklist">Tracklist</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="show" class="flex-container">
+        <div class="image-container">
+          <img id="thumbnail" src="./resources/images/mushroom.jpg" alt="">
+        </div>
+        <div>
+          <h1>Jon and Swanson's Podcast</h1>
+          <p>Musings on the media of our world from two guys who probably should've just majored in philosophy. Also Noah is here.</p>
+        </div>
+        <audio id="latest-episode" src="" controls></audio>
+      </section>
+      <section id="hosts" class="flex-container">
+        <div class="image-container flex-item">
+          <img src="./resources/images/Conan.png" alt="">
+          <h1>Swanson Traylor</h1>
+        </div>
+        <div class="image-container flex-item">
+          <img src="./resources/images/DM.jpg" alt="">
+          <h1>Jon Johnston</h1>
+        </div>
+        <div class="image-container flex-item">
+          <img src="./resources/images/noah.jpg" alt="">
+          <h1>Noah Ward</h1>
+        </div>
+      </section>
+      <section id="tracklist">
+
+      </section>
+      <section id="contact">
+
+      </section>
+    </main>
   </body>
 </html>
