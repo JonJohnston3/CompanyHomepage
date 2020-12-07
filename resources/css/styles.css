@@ -16,21 +16,26 @@ img {
 .flex-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 /* Navigation */
 
 header {
     position: fixed;
     height: 40px;
-    background-color: skyblue;
+    background-color: black;
     width: 100%;
-    
+}
+
+nav a {
+    color: white;
 }
 
 nav li{
     display: inline;
     float: left;
     padding: 10px;
+    color: white;
 }
 
 /* The Show */
@@ -45,6 +50,12 @@ main {
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
+    padding: 0 10% 0 10%;
+}
+
+#description {
+    background-color: grey;
+    border-radius: 10%;
 }
 
 #thumbnail {
