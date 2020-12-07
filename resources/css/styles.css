@@ -1,7 +1,22 @@
 /* Universal */
+@font-face {
+    font-family: 'Mukta';
+    src: url('../fonts/Mukta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Righteous';
+    src: url('../fonts/Righteous-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     background-color: white;
     padding-bottom: 50px;
+    font-family: 'Mukta', sans-serif;
 }
 
 img {
@@ -21,33 +36,52 @@ img {
 }
 
 .content-box {
-    background-color: silver;
-    padding: 5px;
+    background-color: white;
+    padding: 10px;
     width: 70%;
+    line-height: 1.2;
+
 }
 
 h1 {
-    font-size: 20px;
     color: white;
+    font-family: 'Righteous', sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Righteous', sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+p {
+    margin-top: 5px;
 }
 
 /* Navigation */
 
 header {
     position: fixed;
-    height: 40px;
     background-color: black;
     width: 100%;
-    
 }
 
 nav {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 60px;
 }
 
 nav a {
     color: white;
+    font-size: 24px;
 }
 
 nav li{
@@ -55,15 +89,12 @@ nav li{
     float: left;
     padding: 10px;
     margin: 0 10px 0 10px;
-    color: white;
 }
 
 /* The Show */
 
-
-
 main {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 #show {
@@ -72,12 +103,24 @@ main {
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
-    padding: 0 10% 0 10%;
+    padding: 0 10% 5% 10%;
     flex-direction: column;
 }
 
 #show .flex-container {
     width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#description {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+#latest-episode {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #thumbnail {
@@ -86,15 +129,20 @@ main {
     overflow: hidden;
 }
 
+audio {
+    margin: 5px 0 5px 0;
+}
+
 /* The Hosts */
 
 #hosts {
     flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 }
 
 #hosts .flex-container {
     width: 100%;
-    margin-bottom: 45px;
 }
 
 /* Contact */
